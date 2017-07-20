@@ -1,12 +1,9 @@
-# Angular ESNext TodoMVC
-[![Dependency Status](https://david-dm.org/blacksonic/angular2-esnext-todomvc.svg)](https://david-dm.org/blacksonic/angular2-esnext-todomvc)
-[![devDependency Status](https://david-dm.org/blacksonic/angular2-esnext-todomvc/dev-status.svg)](https://david-dm.org/blacksonic/angular2-esnext-todomvc?type=dev)
+# Angular 2 ES6 webpack
+# Shopping Cart Application for Courses (e learning portal)
 
-TodoMVC application built with Angular in Javascript (ES6/ES7).
+E learning application built with Angular 2 es 6 bootstrap.
 
-Layout and namings based on the [official Angular style guide](https://angular.io/styleguide).
-
-### Concepts it covers
+### Contains
 
 - Creating @Component with directives (ngIf, ngFor)
 - Creating child @Component and communicating with parent (@Input, @Output)
@@ -18,8 +15,8 @@ Layout and namings based on the [official Angular style guide](https://angular.i
 
 ```bash
 
-git clone https://github.com/blacksonic/angular2-esnext-todomvc.git
-cd angular2-esnext-todomvc
+git clone https://github.com/mejayantpatil/Angular-2-es6-webpack.git
+cd Angular-2-es6-webpack
 
 npm install
 npm start
