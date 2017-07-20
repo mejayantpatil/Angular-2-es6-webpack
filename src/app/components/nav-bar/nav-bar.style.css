@@ -1,0 +1,97 @@
+/** Login FORM CSS **/
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc
+}
+.btn-go{
+    color: #fff;
+    background:#e74c3d;
+}
+.btn-go:hover{
+    color: #fff;
+    background:#e74c3d;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+
+/** Cart count CSS **/
+.cart-count {
+    border-radius: 9px;
+    background: orangered;
+    font-size: 10px;
+    position: absolute;
+    top: 5px;
+    text-align: center;
+    line-height: 14px;
+    width: 14px;
+    color: #fff;
+    left: 25px;
+    height: 14px;
+}
+
+.hero-spacer {
+    margin-top: 50px;
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+/** Mobile CSS**/
+
+.mobile-search {
+  font-size: 20px;
+  top: 13px;
+}
+
+.mobile-cart {
+  font-size: 20px;
+  top: 13px;
+}
+
+.mobile-cart-count {
+  left: 155px;
+}
+.mobile-searh-form {
+  margin-top: 8px;
+}

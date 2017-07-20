@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4">
+      <img src="images/turbine2.jpg" class="img-responsive" alt="a" />
+    </div>
+    <div class="col-lg-8">
+      <h2>{{course.title}}</h2>
+      <div>{{course.description}}</div>
+      <div>
+        <hr/>
+        <span>Price: $120.00</span>
+        <button class="btn btn-warning">But now</button>
+        <button class="btn btn-success" (click)="add(course, $event)">Add To Cart</button>
+      </div>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6">
+      <h3>Reviews</h3>
+      <hr/>
+      <span>Posted By: Test User</span><br/>
+      <span>Posted Date: 12/12/2012</span>
+      <p>This course is good having clear information about course materail..</p>
+      <hr/>
+      <span>Posted By: Test User</span><br/>
+      <span>Posted Date: 12/12/2012</span>
+      <p>This course is good having clear information about course materail..</p>
+
+    </div>
+  </div>
+</div>

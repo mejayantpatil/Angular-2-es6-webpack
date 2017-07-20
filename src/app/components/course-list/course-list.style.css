@@ -1,0 +1,33 @@
+header.jumbotron {
+  color: #fff;
+  background: transparent;
+}
+
+.banner-lg {
+  height: 400px;
+  width: 100%;
+  background-image: url(images/banner_new.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 51px;
+}
+
+.banner-xs {
+  height: 400px;
+  width: 100%;
+  background-image: url(images/banner_new.jpg);
+  background-repeat: no-repeat;
+  background-position: -225px 0px;
+  position: absolute;
+  z-index: -1;
+  top: 51px;
+}
+
+.course-container {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+}

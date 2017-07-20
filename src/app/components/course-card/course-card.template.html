@@ -1,0 +1,32 @@
+<div class="col-sm-3 col-xs-12">
+    <div class="col-item">
+        <div class="photo">
+            <img src="images/turbine2.jpg" class="img-responsive" alt="a" />
+        </div>
+        <div class="info">
+            <div class="row">
+                <div class="price col-md-6 col-xs-12">
+                    <h5>{{course.title}}</h5>
+                    <h5 class="price-text-color">
+                        $199.99</h5>
+                </div>
+                <div class="rating hidden-sm col-md-6 col-xs-12">
+                    <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                    </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                    </i><i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="separator clear-left">
+                <p class="btn-add" (click)="add(course, $event)">
+                    <a class=""><i class="fa fa-shopping-cart"></i>
+                    <span class="hidden-sm">Add to cart</span></a></p>
+                <p class="btn-details">
+                    <a class=""><i class="fa fa-list"></i>
+                    <span class="hidden-sm">More details</span></a></p>
+            </div>
+            <div class="clearfix">
+            </div>
+        </div>
+    </div>
+    <br class="visible-xs-block"/>
+</div>

@@ -1,0 +1,62 @@
+<div class="hidden-xs banner-lg"></div>
+<div class="visible-xs-inline banner-xs"></div>
+<!-- Page Content -->
+<div class="container">
+  <header class="jumbotron hero-spacer">
+    <h2>A Warm Welcome to TurbineTut!</h2>
+    <div>TurbineTut is going to be an online learning platform.
+      This is going to offer courses in the field of Turbines (Steam and Gas Turbines),
+      Oil Refinery, Boilers and related Technology. Users (Customers) can enroll for these courses and get knowledge,
+      get certified in the technology they are interested in.
+      For providing virtual experience of inside of a say Oil Refinery, website is going to make use of Virtual Reality.
+    </div>
+    <div>
+      <br>
+      <a class="btn btn-success btn-large">Sign Up to Enroll!</a>
+   </div>
+  </header>
+
+  <div class="row course-container">
+      <div class="col-md-9 col-sm-9 col-xs-12">
+          <h3> New Courses</h3>
+      </div>
+      <div class="col-md-3 col-sm-3 hidden-xs">
+          <!-- Controls -->
+          <div class="controls pull-right ">
+              <a class="left fa fa-chevron-left btn btn-success" href="#carousel-example" data-slide="prev"></a>
+              <a class="right fa fa-chevron-right btn btn-success" href="#carousel-example" data-slide="next"></a>
+          </div>
+      </div>
+      <div id="carousel-example" class="col-md-12 col-sm-12 carousel slide hidden-xs" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+              <div class="item active">
+                  <div class="row">
+                      <course-card *ngFor='let course of courses' [routerLink]="['course-details', course.id]" [course]="course" (addToCart)="addToCart($event)"></course-card>
+                  </div>
+              </div>
+              <div class="item">
+                <div class="row">
+                    <course-card *ngFor='let course of courses' [course]="course" [routerLink]="['course-details', course.id]" (addToCart)="addToCart($event)"></course-card>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="visible-xs-block col-xs-12" >
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+                <div class="row">
+                    <course-card *ngFor='let course of courses' [routerLink]="['course-details', course.id]" [course]="course" (addToCart)="addToCart($event)"></course-card>
+                </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                  <course-card *ngFor='let course of courses' [course]="course" [routerLink]="['course-details', course.id]" (addToCart)="addToCart($event)"></course-card>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
