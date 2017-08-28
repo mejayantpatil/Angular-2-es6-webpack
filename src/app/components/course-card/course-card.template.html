@@ -6,7 +6,8 @@
         <div class="info">
             <div class="row">
                 <div class="price col-md-6 col-xs-12">
-                    <h5>{{course.title}}</h5>
+                    <h4>{{course.title}}</h4>
+                    <span>By {{course.instructor}}</span>
                     <h5 class="price-text-color">
                         $199.99</h5>
                 </div>
@@ -17,7 +18,11 @@
                 </div>
             </div>
             <div class="separator clear-left">
-                <p class="btn-add" (click)="add(course, $event)">
+                <p class="btn-add" *ngIf="course.addedToCart">
+                  <a class="" href="/#/cart"><i class="fa fa-shopping-cart"></i>
+                  <span class="hidden-sm">Go to cart</span></a>
+                </p>
+                <p class="btn-add" (click)="add(course, $event)" *ngIf="!course.addedToCart">
                     <a class=""><i class="fa fa-shopping-cart"></i>
                     <span class="hidden-sm">Add to cart</span></a></p>
                 <p class="btn-details">

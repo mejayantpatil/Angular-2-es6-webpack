@@ -10,15 +10,24 @@
     <!-- /.row -->
     <div class="">
           <div class="row">
-              <div class="col-sm-12 col-md-10 col-md-offset-1" *ngIf="cart.length > 0">
-                <div *ngFor='let item of cart'>
-                  <span>{{item.id}}</span> <span>{{item.title}}</span>
-                  <span class="pull-right">Price: $120.00</span>
-                  <hr/>
+            <div class="col-sm-12 col-md-10 col-md-offset-1" *ngIf="cart.length > 0">
+              <div *ngFor='let item of cart'>
+                <strong>{{item.title}}</strong><br>
+                <span>By {{item.instructor}}</span>
+                <div class="pull-right m-t-20">
+                  <a class="" (click)="remove(item, $event)"><i class="fa fa-trash-o"></i>
+                  <span class="hidden-sm">Remove</span></a>
+                  <span class="">Price: $120.00</span>
                 </div>
+                <hr/>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-12 col-md-10 col-md-offset-1" *ngIf="cart.length > 0">
                 <div>
                   <strong>Total</strong>
-                  <span class="pull-right">$123.00</span>
+                  <span class="pull-right">Prcie: $123.00</span>
                   <hr/>
                 </div>
                 <div class="pull-right">

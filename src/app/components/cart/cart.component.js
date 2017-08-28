@@ -10,6 +10,10 @@ import template from './cart.template.html';
 export class CartComponent {
   constructor(courseStore: CourseStoreService) {
     this._courseStore = courseStore;
-    this.cart = this._courseStore.cart;    
+    this.cart = this._courseStore.cart;
+  }
+
+  remove(course, event) {
+    this._courseStore.remove(course);
   }
 }

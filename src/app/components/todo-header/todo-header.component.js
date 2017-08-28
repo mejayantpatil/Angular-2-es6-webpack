@@ -9,7 +9,7 @@ import template from './todo-header.template.html';
 })
 export class TodoHeaderComponent {
   newTodo = '';
-
+  title = 'ok';
   constructor(todoStore: TodoStoreService) {
     this._todoStore = todoStore;
   }

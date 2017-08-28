@@ -14,6 +14,8 @@ export class NavBarComponent {
     this.appName = 'TurbineTut';
     this._courseStore = courseStore;
     this.mobileSearch = false;
+    this.searchToggle = false;
+    this.searchResult = [];
   }
 
   getCount() {
@@ -21,5 +23,19 @@ export class NavBarComponent {
   }
   toggleMobileSearch() {
     this.mobileSearch = !this.mobileSearch;
+  }
+
+  toggleSearchList() {
+    this.searchToggle = !this.searchToggle;
+  }
+
+  searchItem(val) {
+    if(val != '') {
+      this.searchToggle = true;
+    } else {
+      this.toggleSearchList();
+    }
+
+    this.searchResult = this._courseStore.getCourseByName(val);
   }
 }

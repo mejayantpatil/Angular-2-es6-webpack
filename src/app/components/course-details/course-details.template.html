@@ -5,12 +5,14 @@
     </div>
     <div class="col-lg-8">
       <h2>{{course.title}}</h2>
+      <span>By {{course.instructor}}</span>
       <div>{{course.description}}</div>
       <div>
         <hr/>
         <span>Price: $120.00</span>
         <button class="btn btn-warning">But now</button>
-        <button class="btn btn-success" (click)="add(course, $event)">Add To Cart</button>
+        <button class="btn btn-success" *ngIf="!course.addedToCart" (click)="add(course, $event)">Add To Cart</button>
+        <button class="btn btn-success" *ngIf="course.addedToCart" (click)="goToCart()">Go To Cart</button>
       </div>
 
     </div>
