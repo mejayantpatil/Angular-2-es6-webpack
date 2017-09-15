@@ -8,3 +8,4 @@ export * from './nav-bar/nav-bar.component';
 export * from './course-card/course-card.component'
 export * from './course-list/course-list.component'
 export * from './course-details/course-details.component';
+export * from './checkout/checkout.component';

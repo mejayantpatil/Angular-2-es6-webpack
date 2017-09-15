@@ -16,7 +16,8 @@ import {
   NavBarComponent,
   CourseCardComponent,
   CourseListComponent,
-  CourseDetailsComponent
+  CourseDetailsComponent,
+  CheckoutComponent
 } from './components';
 import { TrimPipe } from './pipes';
 import { routes } from './routes';
@@ -34,7 +35,8 @@ import { routes } from './routes';
     NavBarComponent,
     CourseCardComponent,
     CourseListComponent,
-    CourseDetailsComponent
+    CourseDetailsComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

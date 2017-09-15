@@ -1,0 +1,27 @@
+<div class="login-form">
+	<div class="row">
+		<form>
+			<div class="col-xs-12 col-sm-offset-3 col-sm-4 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4 login-block">
+				<h3>Login Via</h3>
+				<div>
+					<a class="btn btn-primary" (click)="fbLogin();">Facebook</a>
+					<a class="btn btn-danger" id="googlelogin">Google</a>
+				</div>
+				<h3>or</h3>
+				<div class="form-group">
+					<input class="form-control" type="email" name="email" placeholder="Enter email">
+					<input class="form-control" type="password" name="password" placeholder="Enter password">
+				</div>
+				<a href="" class="pull-right">Forgot password?</a>
+				<div class="clearfix"></div>
+				<button class="btn btn-success btn-block" type="submit">Sign In</button>
+				<input type="checkbox" name="keepLoginIn"/>
+				<label for="keepLoginInKeep">keep login in</label>
+				<div class="new-user-block">
+					<span>New user?</span>
+					<a href="">Join here</a>
+				</div>
+			</div>
+		</form>	
+	</div>
+</div>

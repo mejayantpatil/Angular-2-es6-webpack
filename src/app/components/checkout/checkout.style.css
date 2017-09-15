@@ -1,0 +1,18 @@
+.login-form{
+    overflow: hidden;
+}
+.login-block{
+    border:1px solid #ccc;
+    padding: 20px;
+}
+.login-block input{
+    margin-bottom: 10px; 
+}
+.login-block button{
+    margin:20px 0;
+    height: 50px;
+}
+.new-user-block{
+    padding: 15px;
+    border: 1px solid #ccc;
+}
