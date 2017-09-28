@@ -5,12 +5,12 @@ import { MainModule } from './main.module';
 platformBrowserDynamic().bootstrapModule(MainModule);
 window.fbAsyncInit = function() {
     FB.init({
-      appId            : '1688847144480237',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v2.10'
+      appId      : '884705501697047',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v2.10'
     });
-    FB.AppEvents.logPageView();
+    FB.AppEvents.logPageView();       
   };
 
   (function(d, s, id){

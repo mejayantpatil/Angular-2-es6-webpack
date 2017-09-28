@@ -7,19 +7,16 @@ import template from './checkout.template.html';
   template: template,
   styleUrls: ['app/components/checkout/checkout.style.css']
 })
-export class CheckoutComponent { 
-  
- fbLogin() {
-      FB.login(function(response) {
-    if (response.authResponse) {
-     console.log('Welcome!  Fetching your information.... ');
-     FB.api('/me', function(response) {
-       console.log('Good to see you, ' + response.name + '.');
-       console.log(response);
-     });
-    } else {
-     console.log('User cancelled login or did not fully authorize.');
-    }
-    })
+export class CheckoutComponent {  
+ fbLogin() {    
+    FB.login(function(response){
+      if(response.status === 'connected'){
+        alert('you are connected');
+      } else if(response.status === 'not_authorized') {
+        alert('you are not authorized');
+      } else {
+        alert('you are not logged into facebook');
+      }
+    });      
   }
 }
