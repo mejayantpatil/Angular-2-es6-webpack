@@ -65,7 +65,9 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Become an Instructor</a></li>
         <li><a href="#" routerLink="/cart" style=''><span class="glyphicon glyphicon-shopping-cart"></span><i class="cart-count"> {{getCount()}}</i> Cart</a></li>
-        <li class="dropdown">
+		<li *ngIf="getUser()"><a href="#">{{getUser()}}</a></li>
+		<li *ngIf="getUser()"><a (click)="fbLogout();">Logout</a></li>
+        <li class="dropdown" *ngIf="!getUser()">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sign In <span class="caret"></span></a>
         <ul id="login-dp" class="dropdown-menu">
           <li>

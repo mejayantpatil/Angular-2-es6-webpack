@@ -3,9 +3,10 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { MainModule } from './main.module';
 
 platformBrowserDynamic().bootstrapModule(MainModule);
+/**
 window.fbAsyncInit = function() {
     FB.init({
-      appId      : '884705501697047',
+      appId      : '666279730144440',
       cookie     : true,
       xfbml      : true,
       version    : 'v2.10'
@@ -20,3 +21,4 @@ window.fbAsyncInit = function() {
      js.src = "//connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
+**/

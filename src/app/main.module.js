@@ -4,8 +4,12 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
+import { FacebookModule } from 'ngx-facebook';
+
 import { TodoStoreService } from './services/todo-store.service';
 import { CourseStoreService } from './services/course-store.service';
+import { HttpTestService } from './services/http-test.service';
+
 import {
   AppComponent,
   TodoListComponent,
@@ -42,6 +46,7 @@ import { routes } from './routes';
     BrowserModule,
     FormsModule,
     HttpModule,
+	FacebookModule.forRoot(),
     RouterModule.forRoot(routes, {
       useHash: true
     })
@@ -49,6 +54,7 @@ import { routes } from './routes';
   providers: [
     TodoStoreService,
     CourseStoreService,
+	HttpTestService,
     { provide: 'AUTHOR', useValue: 'Soós Gábor' }
   ]
 })
